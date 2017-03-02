@@ -1,6 +1,12 @@
 ---
 
+environments:
+  - name: drm-test
+    cluster:
+      maxSize: 2
+
 service:
+  name: drm-test
   memory: 100
   port: 80
   healthEndpoint: /aftp/index.html
@@ -8,6 +14,6 @@ service:
     - /aftp*
   pipeline:
     source:
-      repo: cplee/aftp-mu
+      repo: dmurawsky/aftp-mu
     build:
       image: aws/codebuild/ubuntu-base:14.04
