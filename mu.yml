@@ -1,10 +1,4 @@
 ---
-
-environments:
-  - name: drm-test
-    cluster:
-      maxSize: 2
-
 service:
   name: drm-test
   memory: 100
