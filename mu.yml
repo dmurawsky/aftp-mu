@@ -9,7 +9,7 @@ environments:
       maxSize: 5
 
 service:
-  name: drm-test
+  name: drm-test2
   memory: 100
   port: 80
   healthEndpoint: /aftp/index.html
